@@ -5,9 +5,7 @@ export default function TopBar() {
   // creatae a bar that displays /bars.svg in the left corner
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Container
-        sx={{ paddingBottom: "25px", paddingTop: "25px", paddingLeft: "25px" }}
-      >
+      <Container sx={{ paddingBottom: "25px", paddingTop: "15px" }}>
         <img
           alt="logo"
           className="headerImg"
