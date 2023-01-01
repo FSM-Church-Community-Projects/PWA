@@ -1,7 +1,8 @@
+// Modules
 import * as React from "react";
-//import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+// Icons
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import PeopleIcon from "@mui/icons-material/People";
@@ -12,20 +13,6 @@ export default function SimpleBottomNavigation() {
 
   return (
     <BottomNavigation
-      sx={{
-        "& .MuiBottomNavigationAction-root, .Mui-selected, svg": {
-          color: "#ddd",
-        },
-        "& .Mui-selected, .Mui-selected > svg": {
-          color: "#fff",
-        },
-      }}
-      style={{
-        position: "fixed",
-        bottom: 0,
-        width: "100%",
-        background: "rgba(0, 0, 0, 0.56)",
-      }}
       showLabels
       value={value}
       onChange={(event, newValue) => {
