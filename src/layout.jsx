@@ -22,7 +22,7 @@ const BottomNavigationRoot = {
   position: "fixed",
   bottom: 0,
   width: "100%",
-  background: "rgba(0, 0, 0, 0.56)",
+  background: "rgba(0, 0, 0, 0.6)",
 };
 
 export default function Layout(props) {
