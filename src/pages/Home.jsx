@@ -12,7 +12,7 @@ export default function Home() {
           alignItems: "center",
         }}
       >
-        <img className="headerImg" src="/header.png" />
+        <img alt="logo" className="headerImg" src="/header.png" />
       </Grid>
     </Grid>
   );
