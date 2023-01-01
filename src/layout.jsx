@@ -1,6 +1,7 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Container } from "@mui/system";
 import Navigation from "./components/navigation";
+import TopBar from "./components/TopBar";
 
 // Define the styles
 const NavigationActionRoot = {
@@ -42,6 +43,7 @@ export default function Layout(props) {
 
   return (
     <ThemeProvider theme={theme}>
+      <TopBar />
       <Navigation />
       <Container>{props.children}</Container>
     </ThemeProvider>
