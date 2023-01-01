@@ -1,9 +1,10 @@
 import Layout from "./layout";
+import Home from "./pages/Home";
 function App() {
   return (
     <div className="App">
       <Layout>
-        <h1>Obey your noodly master!</h1>
+        <Home />
       </Layout>
     </div>
   );
