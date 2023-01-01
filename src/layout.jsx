@@ -38,6 +38,16 @@ const TypographyVariantArrow = {
     },
   },
 };
+const TypographyVariantRegular = {
+  props: { variant: "regular" },
+  style: {
+    fontWeight: "normal",
+    display: "flex",
+    fontSize: "1rem",
+    marginBottom: "1rem",
+    alignItems: "center",
+  },
+};
 
 export default function Layout(props) {
   const theme = createTheme({
@@ -49,7 +59,8 @@ export default function Layout(props) {
         styleOverrides: { root: BottomNavigationRoot },
       },
       MuiTypography: {
-        variants: [TypographyVariantArrow],
+        styleOverrides: { root: { color: "white" } },
+        variants: [TypographyVariantArrow, TypographyVariantRegular],
       },
     },
     palette: {
