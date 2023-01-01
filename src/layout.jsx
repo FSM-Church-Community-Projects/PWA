@@ -9,8 +9,8 @@ const NavigationActionRoot = {
     color: "white",
   },
   "& .MuiSvgIcon-root": {
-    padding: "5px 15px 5px 15px",
-    margin: 10,
+    padding: "5px 20px 5px 20px",
+    margin: 5,
     borderRadius: 15,
   },
   "&.Mui-selected .MuiSvgIcon-root": {
