@@ -25,6 +25,19 @@ const BottomNavigationRoot = {
   width: "100%",
   background: "rgba(0, 0, 0, 0.6)",
 };
+const TypographyVariantArrow = {
+  props: { variant: "arrow" },
+  style: {
+    color: "white",
+    fontSize: "1.3rem",
+    "&::after": {
+      content: 'url("/arrow.svg")',
+      marginLeft: 16,
+      color: "#E4B454",
+      verticalAlign: "middle",
+    },
+  },
+};
 
 export default function Layout(props) {
   const theme = createTheme({
@@ -34,6 +47,9 @@ export default function Layout(props) {
       },
       MuiBottomNavigation: {
         styleOverrides: { root: BottomNavigationRoot },
+      },
+      MuiTypography: {
+        variants: [TypographyVariantArrow],
       },
     },
     palette: {
