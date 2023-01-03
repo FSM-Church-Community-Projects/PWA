@@ -19,6 +19,7 @@ const NavigationActionRoot = {
   },
 };
 const BottomNavigationRoot = {
+  zIndex: 100,
   height: 100,
   position: "fixed",
   bottom: 0,
