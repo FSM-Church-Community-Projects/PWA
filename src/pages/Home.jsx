@@ -3,6 +3,8 @@ import Typography from "@mui/material/Typography";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 import Button from "@mui/material/Button";
 import { Link } from "@mui/material";
+import headerImage from "../assets/header.png";
+import mapImage from "../assets/map.png";
 
 const ButtonSX = {
   borderRadius: 15,
@@ -33,7 +35,7 @@ export default function Home() {
           marginBottom: "40px",
         }}
       >
-        <img alt="logo" className="headerImg" src="/header.png" />
+        <img alt="logo" className="headerImg" src={headerImage} />
       </Grid>
       <Grid item xs={12} marginBottom="">
         <Typography
@@ -127,7 +129,7 @@ export default function Home() {
         </Typography>
         <img
           alt="map"
-          src="/map.png"
+          src={mapImage}
           width="100%"
           style={{
             marginBottom: "10px",

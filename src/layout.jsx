@@ -2,6 +2,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Container } from "@mui/system";
 import Navigation from "./components/navigation";
 import TopBar from "./components/TopBar";
+import arrow from "./assets/arrow.svg";
 
 // Define the styles
 const NavigationActionRoot = {
@@ -32,7 +33,7 @@ const TypographyVariantArrow = {
     color: "white",
     fontSize: "1.3rem",
     "&::after": {
-      content: 'url("/arrow.svg")',
+      content: `url("${arrow}")`,
       marginLeft: 16,
       color: "#E4B454",
       verticalAlign: "middle",

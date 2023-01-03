@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import { Container } from "@mui/system";
+import barSvg from "../assets/bars.svg";
 
 export default function TopBar() {
   // creatae a bar that displays /bars.svg in the left corner
@@ -9,7 +10,7 @@ export default function TopBar() {
         <img
           alt="logo"
           className="headerImg"
-          src="/bars.svg"
+          src={barSvg}
           style={{
             height: 13,
             width: 23,
