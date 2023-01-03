@@ -2,6 +2,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
 import Button from "@mui/material/Button";
+import { Link } from "@mui/material";
 
 const ButtonSX = {
   borderRadius: 15,
@@ -15,7 +16,13 @@ const alignYCenter = {
 
 export default function Home() {
   return (
-    <Grid container spacing={2} justifyContent="center" alignItems="center">
+    <Grid
+      container
+      spacing={2}
+      justifyContent="center"
+      alignItems="center"
+      marginBottom="100px"
+    >
       <Grid
         item
         xs={12}
@@ -97,6 +104,44 @@ export default function Home() {
             </Button>
           </Grid>
         </Grid>
+      </Grid>
+      <Grid item xs={12} marginBottom="">
+        <Typography
+          variant="arrow"
+          component="h1"
+          sx={{
+            marginBottom: "10px",
+          }}
+        >
+          Church and ministries
+        </Typography>
+
+        <Typography
+          variant="regular"
+          component="h2"
+          sx={{
+            color: "rgba(255, 255, 255, 0.78)",
+          }}
+        >
+          Near You
+        </Typography>
+        <img
+          alt="map"
+          src="/map.png"
+          width="100%"
+          style={{
+            marginBottom: "10px",
+          }}
+        />
+        <Link
+          href="/churches"
+          sx={{
+            color: "#E4B454",
+            textDecoration: "none",
+          }}
+        >
+          Check facilities
+        </Link>
       </Grid>
     </Grid>
   );
